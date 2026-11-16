@@ -20,7 +20,8 @@ public class HospitalApp extends Application {
     private static final String URL =
         "jdbc:mysql://localhost:3306/hospital_db";
     private static final String USER = "root";
-    private static final String PASSWORD = "Adewusijanet1234?";
+    private static final String PASSWORD =
+    System.getenv("HOSPITAL_DB_PASSWORD");
 
     private final TextField idField = new TextField();
     private final TextField nameField = new TextField();
